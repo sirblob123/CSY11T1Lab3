@@ -37,7 +37,7 @@ public class Main {
         int ascii = first;
         if (word.length() == 1) return String.valueOf(ascii);
         if (word.length() == 2) return (ascii + word.substring(1));
-        return (ascii + word.charAt(word.length()-1) + word.substring(2, word.length() - 2) + word.charAt(1));
+        return (ascii + word.charAt(word.length()-1) + word.substring(2, word.length() - 1) + word.charAt(1));
     }
 
 
@@ -70,6 +70,6 @@ public class Main {
         char first = (char) ascii;
         if (word.length() == 1) return String.valueOf(first);
         if (word.length() == 2) return (first + word.substring(1));
-        return (first + word.charAt(word.length()-1) + word.substring(2, word.length() - 2) + word.charAt(1));
+        return (first + word.charAt(word.length()-1) + word.substring(2, word.length() - 1) + word.charAt(1));
     }
 }
